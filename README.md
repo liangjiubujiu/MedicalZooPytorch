@@ -28,6 +28,7 @@ from lib.losses3D import DiceLoss
 def main():
     args = get_arguments()
     utils.make_dirs(args.save)
+    # data size of each sampled volume: [128,128,64]
 
     training_generator, val_generator, full_volume, affine = medical_loaders.generate_datasets(args,
                                                                                                path='.././datasets')
