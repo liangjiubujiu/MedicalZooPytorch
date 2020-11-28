@@ -26,6 +26,31 @@ We strongly believe in open and **reproducible deep learning research**. Our goa
 - [ ] Rewrite manual
 - [ ] New notebooks with google colab support
 
+## Train your own dataset
+0. Prepare your dataset under /datasets.
+```
+cbct
+  |_image
+    |_0001
+      |_*********.dcm
+      ...
+    |_0002
+    ...
+    |_0020
+    
+  |_label
+    |_0001
+      |_********.png
+            ...
+    |_0002
+    ...
+    |_0020
+```
+1. Config your dataset and model.
+2. Run /examples/cbct_2020.py.
+```
+python cbct_2020.py
+```
 ## Quick Start
 
 0. Prepare iSeg 2017 dataset and copy it on datasets/iSeg2017.
