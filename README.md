@@ -27,7 +27,7 @@ We strongly believe in open and **reproducible deep learning research**. Our goa
 - [ ] New notebooks with google colab support
 
 ## Train your own dataset
-0. Prepare your dataset under /datasets.
+0. Prepare your dataset under /datasets. boshi/boshi/cbct/cbct
 ```
 cbct
   |_image
@@ -47,9 +47,11 @@ cbct
     |_0020
 ```
 1. Config your dataset and model.
+1.1 Create lib/medloader/cbct.py and cbct_utils.py.
+1.2 Create /examples/train_cbct_2020.py.
 2. Run /examples/cbct_2020.py.
 ```
-python cbct_2020.py
+python train_cbct_2020.py
 ```
 ## Quick Start
 
